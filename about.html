@@ -7,11 +7,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
 <meta name="renderer" content="webkit">
 
-<title>五悠工作室</title>
+<title>About me | 五悠工作室</title>
 
 <meta name="format-detection" content="telephone=no"/>
 
-  <meta name="description" content="个人的娱乐网站">
+  <meta name="description" content="我就是我">
 
 
 
@@ -64,12 +64,12 @@
 
   
 
-  <meta property="og:title" content="五悠工作室">
+  <meta property="og:title" content="About me | 五悠工作室">
 <meta property="og:type" content="blog">
-<meta property="og:url" content="https://www.wuyouts.top/">
+<meta property="og:url" content="https://www.wuyouts.top/about.html">
 <meta property="og:image" content="/favicon-192x192.png">
 
-<meta property="og:description" content="个人的娱乐网站">
+<meta property="og:description" content="我就是我">
 <meta property="og:article:tag" content="iris">
 <meta property="og:locale" content="zh-Hans">
 
@@ -85,41 +85,6 @@
 
 
   
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "Blog",
-    "author": {
-        "@type": "Person",
-        "name": "五悠",
-        "image": {
-            "@type": "ImageObject",
-            "url": "avatar.png"
-        },
-        "description": "个人的娱乐网站"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "五悠工作室",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "/favicon-192x192.png"
-        }
-    },
-    "url": "https://www.wuyouts.top",
-    "image": {
-        "@type": "ImageObject",
-        "url": "/favicon-192x192.png"
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.wuyouts.top"
-    },
-    "keywords": "iris",
-    "description": "个人的娱乐网站"
-}
-</script>
-
 
 
 
@@ -142,9 +107,13 @@ if ('serviceWorker' in navigator) {
   <body data-instant-intensity="viewport">
     
 
-<header class="header">
+<header class="header header__no-hero">
   <div class="header-wrapper">
     <div class="header__left">
+      
+      <div class="header-logo">
+        <a href="/">五悠工作室</a>
+      </div>
       
     </div>
     <div class="header__right">
@@ -156,7 +125,7 @@ if ('serviceWorker' in navigator) {
       
         <li><a class="nav-link " href="/archives">Archive</a></li>
       
-        <li><a class="nav-link " href="/about">About</a></li>
+        <li><a class="nav-link nav-link__active" href="/about">About</a></li>
       
     </ul>
   </div>
@@ -167,55 +136,38 @@ if ('serviceWorker' in navigator) {
   </div>
 </header>
 
- 
-  
-
-<style>
-.hero {
-  background-image: url('/1.png');
-}
-
-@media (max-width: 768px) {
-  .hero {
-    
-  }
-}
-</style>
-
-<section class="hero">
-  <div class="hero-info">
-    <div class="hero-info-wrapper">
-      <h1>五悠工作室</h1>
-      <p></p>
-    </div>
-  </div>
-</section>
-
 
 
     <main class="main">
       
-  <article class="post post__excerpt">
+  <article class="post">
   <header class="post-header">
-    <h2 class="post-title">
-      <a href="/2021/12/15/hello-world/">Hello World</a>
-    </h2>
+    <h1 class="post-title">
+      About me
+    </h1>
     <section class="post-meta">
-      <time datetime="2021-12-15T13:24:11.188Z">
+      <time datetime="2021-12-15T13:40:21.000Z">
   <i class="far fa-calendar" aria-hidden></i>
   2021-12-15
 </time>
 
     </section>
   </header>
-  <section class="post-content">
+  <aside class="post-aside">
+  
+  <section class="post-toc">
+    <header class="post-toc-title">
+      Contents
+    </header>
     
-      <p>
-        Hello！五悠！
+  </section>
 
-      </p>
-    
-    <a class="post-more" href="/2021/12/15/hello-world/#more">»</a>
+
+</aside>
+
+  <section class="post-content">
+    <p>我就是我</p>
+
   </section>
   <footer class="post-meta">
   
@@ -224,8 +176,39 @@ if ('serviceWorker' in navigator) {
 
 </footer>
 
+  <div class="post-end" data-text="End"></div>
 </article>
 
+  
+<section>
+  
+<div id="disqus_thread"></div>
+  
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://www.wuyouts.top/about.html';
+      this.page.identifier = '';
+      this.page.title = 'About me';
+    };
+    if (!document.getElementById('disqus-embed')) {
+      var d = document, s = d.createElement('script');
+      s.type = 'text/javascript';
+      s.id = 'disqus-embed';
+      s.async = true;
+      s.src = '//giuem.disqus.com/embed.js';
+      (d.head || d.body).appendChild(s);
+    }
+    if(typeof DISQUS == 'object'){
+      DISQUS.reset({
+          reload: true,
+          config: disqus_config
+      })
+    }
+  </script>
+  
+
+  
+</section>
 
 
 
